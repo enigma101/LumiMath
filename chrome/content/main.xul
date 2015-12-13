@@ -6,10 +6,26 @@
 
   <script type="application/javascript" src="chrome://LumiMath/content/main.js"/>
 
-  <caption label="Hello World"/>
-  <separator/>
-  <button label="More >>" oncommand="showMore();"/>
-  <separator/>
-  <description id="more-text" hidden="true">This is a simple XULRunner application. XUL is simple to use and quite powerful and can even be used on mobile devices.</description>
+  <vbox>
+    <hbox>
+      <toolbox>
+        <toolbar id="edit-toolbar">
+          <toolbarbutton label="Square Root"/>
+          <toolbarbutton label="Root"/>
+        </toolbar>
+      </toolbox>
+    </hbox>
+    <separator/>
+    <hbox>
+      <browser style="min-width: 550px; min-height: 550px;" flex="1" src="chrome://LumiMath/content/index.html"/>
+      <separator flex="1" />
+        <toolbox>
+          <toolbar id="work-toolbar" orient="vertical">
+            <toolbarbutton label="Add to Both Sides"/>
+            <toolbarbutton label="Subtract from Both Sides"/>
+          </toolbar>
+        </toolbox>
+    </hbox>
+  </vbox>
 
 </window>
