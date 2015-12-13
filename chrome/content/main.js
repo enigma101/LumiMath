@@ -1,3 +1,4 @@
-function showMore() {
-  document.getElementById("more-text").hidden = false;
+function updateEqu(event) {
+  document.getElementById("equ-text").value += event.keyCode;
+  
 }

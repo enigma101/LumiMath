@@ -16,6 +16,7 @@
       </toolbox>
     </hbox>
     <separator/>
+    <textbox id="equ-text" onkeypress="updateEqu(event);" />
     <hbox>
       <browser style="min-width: 550px; min-height: 550px;" flex="1" src="chrome://LumiMath/content/index.html"/>
       <separator flex="1" />
